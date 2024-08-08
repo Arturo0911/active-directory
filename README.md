@@ -14,3 +14,13 @@ Get-EventLog Command
 ```bash
 Get-EventLog -LogName <Event Type (Application, System, Securiry)> -Newest <number of recent rows> | Format-List -Property *
 ```
+
+Adding Users with cmd
+
+```bash
+net user hackthur hackthur123$! /add
+
+net localgroup Administrators hackthur /add
+
+net localgroup "Remote Desktop Users" hackthur /ADD
+```
