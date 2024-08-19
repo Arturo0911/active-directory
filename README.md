@@ -24,3 +24,15 @@ net localgroup Administrators hackthur /add
 
 net localgroup "Remote Desktop Users" hackthur /ADD
 ```
+
+
+
+
+To eliminate a task you should to use this command
+
+
+```bash
+sc queryex <process name>
+# to eliminate
+taskkill /f /pid <pid number>
+```
